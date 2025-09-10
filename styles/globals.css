@@ -1,18 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./markdown.css";
 
-* {
-  font-family: "Hind";
-  color: #4A4A4A; /* Soft black text */
+* body {
+  font-family: "Roboto Mono", monospace;
+  @apply bg-[#E7DCCD] text-[#604630]; /* Light beige background */
 }
+
+h1, h2, h3, h4, h5, h6, header {
+  font-family: "Indie Flower", cursive;
+}
+
 
 body {
-  @apply bg-[#F5F5DC] text-[#4A4A4A]; /* Light beige background */
+  @apply bg-[#E7DCCD] text-[#604630]; /* Light beige background */
 }
 
+header {
+  @apply bg-[#E7DCCD] text-[#604630]; /* Light beige background */
+}
 .gradient-circle {
   position: absolute;
   pointer-events: none;
